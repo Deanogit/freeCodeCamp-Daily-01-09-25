@@ -6,3 +6,18 @@
 // Your function should handle sequences of any length greater than or equal to zero.
 // If the length is zero, return an empty array.
 // Note that the starting numbers are part of the sequence.
+
+function tribonacciSequence(startSequence, length) {
+  console.log(startSequence, length)
+  // check length
+  if (length === 0) {
+    return [];
+  } else {
+    let counter = 0;
+    for (let i = 3; i < length; i++){
+      // reduce
+      counter = 
+    }
+  }
+  //return length;
+}
