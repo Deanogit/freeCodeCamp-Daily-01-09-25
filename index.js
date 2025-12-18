@@ -8,16 +8,22 @@
 // Note that the starting numbers are part of the sequence.
 
 function tribonacciSequence(startSequence, length) {
-  console.log(startSequence, length)
+  console.log(startSequence, length);
   // check length
+  let result = startSequence.slice();
   if (length === 0) {
     return [];
+  } else if (length < 3) {
+    return startSequence.slice(0, length);
   } else {
-    let counter = 0;
-    for (let i = 3; i < length; i++){
+    // let counter = 0;
+    for (let i = 3; i < length; i++) {
       // reduce
-      counter = 
+      // counter =
+      let next = result[i - 1] + result[i - 2] + result[i - 3];
+      result.push(next);
     }
   }
+  return result;
   //return length;
 }
